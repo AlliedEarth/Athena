@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
-  <body>
+  {% if page._page == "home" %}
+      <body class="homepage">
+  {% else %}
+      <body>
+  {% endif %}
 
     {% include header.html %}
 
