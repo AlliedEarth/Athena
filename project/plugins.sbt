@@ -6,6 +6,17 @@ resolvers += "Typesafe Snapshots" at "https://oss.sonatype.org/content/repositor
 
 resolvers += Resolver.jcenterRepo
 
+resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
+
+// ScalaJS
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.10")
+
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.8")
+
+addSbtPlugin("com.vmunier" % "sbt-play-scalajs" % "0.3.0")
+
+addSbtPlugin("com.typesafe.sbt" % "sbt-gzip" % "1.0.0")
+
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.4")
 
@@ -22,3 +33,4 @@ addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.1.10")
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
 
 addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.6")
+
