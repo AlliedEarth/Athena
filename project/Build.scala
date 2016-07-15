@@ -1,7 +1,7 @@
 import com.typesafe.sbt.jse.JsEngineImport.JsEngineKeys
 import org.scalajs.sbtplugin.ScalaJSPlugin
 import play.sbt.PlayScala
-import com.vmunier.....
+//import com.vmunier.
 import name.devries.sbt.typescript.SbtTypescript
 import name.devries.sbt.typescript.SbtTypescript.autoImport._
 import name.devries.tslint.SbtTSLint.autoImport._
@@ -40,7 +40,7 @@ object Build extends Build {
 
   lazy val commonConfig: Project => Project =   _ configs IntegrationTest settings sharedSettings
 
-  lazy val `AlliedEarth` = (project in file(".")
+  lazy val Athena = (project in file(".")
       configure commonConfig
       settings (parallelExecution in Test := false)
       aggregate (
@@ -59,7 +59,7 @@ object Build extends Build {
   lazy val client = (project
       in file("client")
       dependsOn shared
-      enablePlugins (ScalaJSPlugin, ScalaJSPlay)
+      enablePlugins (ScalaJSPlugin)
       configure commonConfig
       settings(libraryDependencies ++= Dependencies.forClient)
     )

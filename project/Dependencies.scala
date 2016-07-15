@@ -71,7 +71,7 @@ object Dependencies {
 
 
   val forClient = Seq(
-    "org.scala-js"             %% "scalajs-dom"             % "0.8.0",
+    "org.scala-js"             %% "scalajs-dom"             % "0.9.0",
     "org.scalatest"            %% "scalatest"               % Versions.scalatest % "it, test, provided"
   )
 

@@ -4,16 +4,19 @@ resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/maven-
 // Typesafe snapshots
 resolvers += "Typesafe Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
+resolvers += "Typesafe repository 2" at "https://repo.typesafe.com/typesafe/releases/"
+
 resolvers += Resolver.jcenterRepo
+
+resolvers += Resolver.sbtPluginRepo("releases")
 
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
+resolvers += Resolver.bintrayRepo("vmunier", "scalajs/sbt-play-scalajs")
 // ScalaJS
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.10")
 
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.8")
-
-addSbtPlugin("com.vmunier" % "sbt-play-scalajs" % "0.3.0")
+addSbtPlugin("com.vmunier" % "sbt-play-scalajs" % "0.3.1")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-gzip" % "1.0.0")
 
